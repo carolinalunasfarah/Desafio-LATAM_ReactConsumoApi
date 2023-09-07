@@ -1,25 +1,27 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Card from "react-bootstrap/Card";
 
-const MyApi = () => {
-    const [characters, setCharacters] = useState([]);
-
+const MyApi = ({characters, setCharacters}) => {
     const getCharacters = async () => {
-        const url = "https://rickandmortyapi.com/api/character";
-        const response = await fetch(url);
-        const data = await response.json();
-        const api = data.results
-            .map((e) => {
-                return {
-                    name: e.name,
-                    status: e.status,
-                    species: e.species,
-                    origin: e.origin.name,
-                    image: e.image,
-                };
-            })
-            .sort((a, b) => a.name.localeCompare(b.name));
-        setCharacters(api);
+        try {
+            const url = "https://rickandmortyapi.com/api/character";
+            const response = await fetch(url);
+            const data = await response.json();
+            const api = data.results
+                .map((e) => {
+                    return {
+                        name: e.name,
+                        status: e.status,
+                        species: e.species,
+                        origin: e.origin.name,
+                        image: e.image,
+                    };
+                })
+                .sort((a, b) => a.name.localeCompare(b.name));
+            setCharacters(api);
+        } catch (error) {
+            console.log("Couldn't get the API information");
+        }
     };
 
     useEffect(() => {
