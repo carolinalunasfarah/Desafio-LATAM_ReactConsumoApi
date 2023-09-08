@@ -36,6 +36,7 @@ const MyApi = ({ setCharacters, filteredData }) => {
                         <Card className="card">
                             <Card.Img
                                 variant="top"
+                                id="cardImg"
                                 src={character.image}
                                 alt={character.name}
                             />
@@ -44,14 +45,14 @@ const MyApi = ({ setCharacters, filteredData }) => {
                                     <h2>{character.name}</h2>
                                 </Card.Title>
                                 <Card.Text>
-                                    <strong>Status:</strong> {character.status}
+                                    <strong id="status">Status:</strong> {character.status}
                                 </Card.Text>
                                 <Card.Text>
-                                    <strong>Species:</strong>{" "}
+                                    <strong id="species">Species:</strong>{" "}
                                     {character.species}
                                 </Card.Text>
                                 <Card.Text>
-                                    <strong>Origin:</strong> {character.origin}
+                                    <strong id="origin">Origin:</strong> {character.origin}
                                 </Card.Text>
                             </Card.Body>
                         </Card>
