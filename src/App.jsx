@@ -15,7 +15,7 @@ function App() {
     return (
         <>
             <Search
-                characters={filteredData}
+                characters={characters}
                 filteredData={setFilteredData}
             />
             <MyApi

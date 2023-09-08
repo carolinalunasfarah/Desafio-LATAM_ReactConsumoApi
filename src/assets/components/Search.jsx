@@ -11,16 +11,19 @@ const Search = ({ characters, filteredData }) => {
 
     return (
         <>
-            <section className="searchSection">
-                <input
-                    className="form-control mb-3"
-                    type="text"
-                    name="search"
-                    id="search"
-                    placeholder="Find your favorite Rick and Morty character"
-                    onChange={inputFilter}
-                />
-            </section>
+            <header>
+                <img src="/src/assets/img/rickymorty.png" alt="Rick Y Morty title" />
+                <section className="searchSection">
+                    <input
+                        className="form-control mb-3"
+                        type="text"
+                        name="search"
+                        id="search"
+                        placeholder="Find your favorite Rick and Morty character"
+                        onChange={inputFilter}
+                    />
+                </section>
+            </header>
         </>
     );
 };
