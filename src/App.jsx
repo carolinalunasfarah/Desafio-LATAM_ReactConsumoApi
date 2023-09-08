@@ -13,20 +13,18 @@ function App() {
 
     return (
         <>
-            <section className="container">
-                <Search
-                    characters={characters}
-                    search={search}
-                    setSearch={setSearch}
-                    setFilteredData={setFilteredData}
-                />
-                <MyApi
-                    characters={characters}
-                    setCharacters={setCharacters}
-                    filteredData={filteredData}
-                    setFilteredData={setFilteredData}
-                />
-            </section>
+            <Search
+                characters={characters}
+                search={search}
+                setSearch={setSearch}
+                setFilteredData={setFilteredData}
+            />
+            <MyApi
+                characters={characters}
+                setCharacters={setCharacters}
+                filteredData={filteredData}
+                setFilteredData={setFilteredData}
+            />
         </>
     );
 }
