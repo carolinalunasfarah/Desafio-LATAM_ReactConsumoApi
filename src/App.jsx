@@ -9,14 +9,15 @@ import Search from "./assets/components/Search";
 function App() {
     const [characters, setCharacters] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
-
-    console.log(filteredData);
+    const [search, setSearch] = useState("");
 
     return (
         <>
             <Search
                 characters={characters}
-                filteredData={setFilteredData}
+                search={search}
+                setSearch={setSearch}
+                setFilteredData={setFilteredData}
             />
             <MyApi
                 characters={characters}

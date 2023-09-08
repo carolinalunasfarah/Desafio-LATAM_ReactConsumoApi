@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Card from "react-bootstrap/Card";
 
-const MyApi = ({ characters, setCharacters }) => {
+const MyApi = ({ setCharacters, filteredData }) => {
     const getCharacters = async () => {
         try {
             const url = "https://rickandmortyapi.com/api/character";
@@ -31,7 +31,7 @@ const MyApi = ({ characters, setCharacters }) => {
     return (
         <>
             <main>
-                {characters.map((character, e) => (
+                {filteredData.map((character, e) => (
                     <section key={e}>
                         <Card className="card">
                             <Card.Img

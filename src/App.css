@@ -17,6 +17,12 @@ header img {
 
 .searchSection {
     width: 35rem;
+    display: flex;
+}
+
+input:hover {
+    transform: scale(1.5);
+    transition: ease-in-out 2s;
 }
 
 main {
@@ -35,4 +41,19 @@ main {
     height: 14rem;
     display: flex;
     flex-direction: column;
+}
+
+.card h2 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+@media (min-width: 1300px) {
+    main {
+        grid-template-columns: repeat(4, auto);
+        justify-content: space-around;
+        gap: 3rem;
+        margin: 3rem;
+    }
 }
