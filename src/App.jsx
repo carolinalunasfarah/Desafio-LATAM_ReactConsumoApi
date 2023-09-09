@@ -7,6 +7,7 @@ import MyApi from "./assets/components/MyApi";
 import Search from "./assets/components/Search";
 
 function App() {
+    // initial states
     const [characters, setCharacters] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
     const [search, setSearch] = useState("");

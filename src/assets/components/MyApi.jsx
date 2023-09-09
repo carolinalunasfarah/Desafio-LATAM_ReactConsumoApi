@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Card from "react-bootstrap/Card";
 
 const MyApi = ({ setCharacters, filteredData }) => {
+    // function that brings the information from the API
     const getCharacters = async () => {
         try {
             const url = "https://rickandmortyapi.com/api/character";

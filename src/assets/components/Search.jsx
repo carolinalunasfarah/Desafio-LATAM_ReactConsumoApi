@@ -1,10 +1,12 @@
 import { useEffect } from "react";
 
 const Search = ({ characters, search, setSearch, setFilteredData }) => {
+    // set search so it captures the input
     const inputFilter = (e) => {
         setSearch(e.target.value);
     };
 
+    // useEffect with condition to show characters or the filteredData
     useEffect(() => {
         if (!search) {
             setFilteredData(characters);
