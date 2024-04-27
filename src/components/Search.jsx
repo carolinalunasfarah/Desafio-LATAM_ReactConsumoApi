@@ -23,7 +23,7 @@ const Search = ({ characters, search, setSearch, setFilteredData }) => {
         <>
             <header>
                 <img
-                    src="/src/assets/img/rickymorty.png"
+                    src="/img/rickymorty.png"
                     alt="Rick Y Morty title"
                 />
                 <section className="searchSection">

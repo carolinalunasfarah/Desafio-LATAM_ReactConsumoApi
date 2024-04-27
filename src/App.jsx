@@ -3,8 +3,8 @@ import "./App.css";
 // bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
 // components
-import MyApi from "./assets/components/MyApi";
-import Search from "./assets/components/Search";
+import MyApi from "./components/MyApi";
+import Search from "./components/Search";
 
 function App() {
     // initial states
