@@ -5,9 +5,11 @@
 }
 
 body {
-    background-image: url(assets/img/background.jpg);
+    background-image: url("/assets/img/background.jpg");
     background-position: center;
-    object-fit: fill;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 header {
